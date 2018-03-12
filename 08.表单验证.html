@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单验证</title>
+<script type="text/javascript">
+	function Chick(){
+		if(document.getElementById("text").value===''||document.getElementById("text").value===null)
+			alert("用户名不能为空!");
+		var len =document.getElementById("text").value.toString().length;
+
+		if(len<6||len>20)
+			alert("用户名长度大于等于6且小于等于20!");
+	}
+	function Emptied(){
+		document.getElementById("text").value='';
+	}
+	</script>
+</head>
+
+<body>
+	<form action="">
+		<p><strong>表单验证</strong></p>
+		<p>用户名:<input type="text" id="text"></p>
+		<input class="button1" type="button" value="检查" id="chick" onClick="Chick();">
+		<input class="button1" type="button" value="重置" id="emptied" onClick="Emptied();">
+	</form>
+</body>
+</html>

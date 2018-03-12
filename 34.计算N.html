@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>计算N</title>
+<script type="text/javascript">
+	var s=1;
+	var n=parseInt(Math.random()*10+1);
+	a=n;
+	while(a>0){
+		s*=a;
+		a--;
+	}
+</script>
+</head>
+
+<body>
+	<h3>计算N!</h3>
+	<br>
+	<p id="post"></p>
+	<script>
+		document.getElementById("post").innerHTML=n+"!="+s;
+	</script>
+</body>
+</html>

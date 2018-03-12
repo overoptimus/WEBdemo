@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>计算N个随机2位整数的和</title>
+<script type="text/javascript">
+	var n=0;
+	var num=0;
+	var string='';
+	var s=0;
+	n=prompt("输入数N:","");
+	function computer_sum(n){
+	do{
+			var random=parseInt(Math.random()*100);
+			string+=random+' ';
+			s+=random;
+			num++;
+		}while(num<n)
+	}
+	computer_sum(n);
+</script>
+</head>
+	
+<body>
+	<h3>计算N个随机2位整数的和</h3>
+	<br><br>
+	<p id="post"></p>
+	<script>
+		document.getElementById("post").innerHTML="10个随机2位整数:"+string+"<br>10个随机2位整数的和="+s;
+	</script>
+</body>
+</html>

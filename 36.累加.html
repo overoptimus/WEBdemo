@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>累加</title>
+<script type="text/javascript">
+	var N=prompt("请输入整数N","");
+	var re = /^[0-9]+.?[0-9]*$/;
+	var s=0;
+	var str='';
+	if(!re.test(N)){
+		alert("请重新输入整数N!");
+		location.reload();
+	}
+	for(var i=1;i<=N;i++){
+		s+=i;
+	}
+	for(var i=1;i<N;i++){
+		str=str+i+"+";
+	}
+	str=str+N+"=";
+	
+</script>
+</head>
+
+<body>
+	<h4>计算1+2+3+...+N</h4>
+	<br>
+	<p id="post"></p>
+	<script>
+		document.getElementById("post").innerHTML=str+s;
+	</script>
+</body>
+</html>

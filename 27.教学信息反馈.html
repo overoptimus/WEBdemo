@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>教学信息反馈</title>
+<style type="text/css">
+	.button {
+		border-radius: 5px;
+		border-style: solid;
+		border-color: white;
+		margin: 0 20px;
+	}
+</style>
+<script type="text/javascript">
+	function emptied(){
+		document.getElementById("textarea").innerText='';
+	}
+</script>
+</head>
+
+<body>
+	<form action="">
+		<fieldset>
+			<legend><h3>教学信息反馈</h3></legend>
+			学号:<input width="10" type="text">
+			姓名:<input width="8" type="text">
+			<br>
+			课程:<select>
+				<option selected="selected" value="Web前端开发技术">Web前端开发技术</option>
+				<option value="数据结构">数据结构</option>
+				<option value="Java">Java</option>
+			</select>
+			<br>
+			教学反馈意见:
+			<br>
+			<textarea name="" id="textarea" cols="40" rows="5" onFocus="emptied();">请输入意见</textarea>
+			<br>
+			<input class="button" type="submit" value="提交">
+			<input class="button" type="reset">
+		</fieldset>
+	</form>
+</body>
+</html>

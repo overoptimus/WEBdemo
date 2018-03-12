@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表格应用</title>
+<style type="text/css">
+	.main {
+		width: 1000px;
+		border: 1px solid black;
+		text-align: center;
+		vertical-align:middle;
+		font-size: 25px;
+		
+	}
+	.main td{
+		border: 1px solid black;
+		width: 1000px;
+		height: 30px;
+		font-weight: 30px;
+	}
+	.fail{
+		color: red;
+	}
+</style>
+</head>
+
+<body>
+	<table class="main">
+		<caption>课程汇总表</caption>
+		<tr>
+			<td rowspan="2">序号</td>
+			<td rowspan="2">学号</td>
+			<td rowspan="2">姓名</td>
+			<td colspan="3">课程成绩</td>
+		</tr>
+		<tr>
+			<td>数据结构</td>
+			<td>Java程序设计</td>
+			<td>Web前端开发技术</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>100101</td>
+			<td>王婷珊</td>
+			<td>75</td>
+			<td>76</td>
+			<td>76</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>100102</td>
+			<td>张叶明</td>
+			<td>60</td>
+			<td class="fail">45</td>
+			<td>66</td>
+		</tr>
+	</table>
+</body>
+</html>

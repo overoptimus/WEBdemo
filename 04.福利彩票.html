@@ -1,0 +1,65 @@
+	<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>福利彩票投注助手</title>
+<style type="text/css">
+	.main {
+		border-style:dotted;
+		background-color: green;
+		width: 600px;
+	}
+	.img{
+		height: 100px;
+		width: 100px;
+		float: left;
+	}
+	</style>
+<script type="text/javascript">
+	function Bbetting(){
+		
+//		alert("111");
+		if(document.getElementById("number").value ==''||document.getElementById("number").value ==null){
+		var random;
+		var string="";
+		//var number=document.getElementById("number");
+		for(var i=0;i<7;i++){
+			random=Math.ceil(Math.random()*30);
+			if(random < 10){
+				string = string + "0" + random.toString() + "  ";
+			}else{
+				string = string + random.toString() + "  ";
+			}
+			
+			
+			
+		}
+		document.getElementById("number").value=string;
+	}else{
+			alert("请先清空!");
+		}
+	}
+	function Emptied(){
+		document.getElementById("number").value="";
+		
+	}
+	</script>
+</head>
+
+<body>
+	<div class="main">
+		<img class="img" src="04.7乐彩.jpg" alt="7乐彩">
+		<h1>福利彩票投注助手</h1>
+		<form action="" name="form1">
+			<table>
+				<tr>
+					<td>彩票号码</td>
+					<td><input type="text" id="number"/></td>
+					<td><input type="button" id="betting" value="投注" onClick="Bbetting()" /></td>
+					<td><input type="button" id="emptied" value="清空" onClick="Emptied();" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS求和</title>
+<script type="text/javascript">
+	var i=3,s=0;
+	for(;i<=36;i=i+3){
+		s+=i;
+	}
+</script>
+</head>
+
+<body>
+	<h1>计算3+6+9+...+36的和</h1>
+	<br><br>
+	<p id="post"></p>
+	<script>
+		document.getElementById("post").innerHTML="参加运算的数:3 6 9 12 15 18 21 24 27 30 33 36<br>3+6+9+...+36="+s;
+	</script>
+</body>
+</html>
